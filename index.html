@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&K Career & Education Advisor | Government of Jammu & Kashmir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="manifest" href="manifest.json">
+   <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body class="antialiased">
+<body class="bg-gray-100">
+
+    <!-- Government Header -->
+    <header class="gov-header sticky top-0 z-50">
+        <!-- Reduced vertical padding from py-4 to py-2 -->
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center max-w-7xl">
+            <!-- Reduced spacing from space-x-4 to space-x-3 -->
+            <div class="flex items-center space-x-3">
+                <div class="gov-emblem">J&K</div>
+                <div>
+                    <!-- Reduced font size from text-xl to text-lg -->
+                    <div class="text-lg font-bold text-white">Career & Education Advisor</div>
+                    <!-- Reduced font size from text-sm to text-xs -->
+                    <div class="text-xs text-blue-200">Government of Jammu & Kashmir</div>
+                </div>
+            </div>
+            <div id="nav-links" class="hidden md:flex items-center space-x-2">
+                <a href="#home" class="gov-nav-link">Home</a>
+                <a href="#assessment-page" class="gov-nav-link">Assessment</a>
+                <a href="#profile" class="gov-nav-link">Profile</a>
+                <a href="#colleges" class="gov-nav-link">Colleges</a>
+                <button id="logout-btn" class="bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded-lg transition text-sm font-medium">
+                    🚪 Logout
+                </button>
+            </div>
+            <div class="md:hidden">
+                <button class="gov-nav-link" id="mobile-menu-toggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    
+</body>
+   
+
+
+
+
+
+    <main class="container mx-auto px-6 py-8 max-w-7xl">
+<!-- Hero Section -->
+        <section id="hero" class="py-16 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 relative overflow-hidden">
+    <!-- Government Emblem Background -->
+    <div class="absolute top-10 right-10 opacity-10">
+        <div class="text-9xl font-bold text-white">J&K</div>
+    </div>
+    
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <!-- Tagline -->
+            <div class="bg-orange-500 text-white px-6 py-2 rounded-full text-sm font-semibold inline-block mb-6 shadow-lg">
+                🎯 Government of Jammu & Kashmir Initiative
+            </div>
+            
+            <!-- Main Headline -->
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Confused about what to do after 
+                <span class="text-orange-400">10th or 12th?</span>
+            </h1>
+            
+            <!-- Subheading -->
+            <p class="text-xl md:text-2xl text-blue-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+                We guide you to the right stream, degree, or skill course — step by step through 
+                personalized career assessment and expert guidance.
+            </p>
+            
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <div class="text-3xl font-bold text-orange-400 mb-2">50,000+</div>
+                    <div class="text-white font-medium">Students Guided</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <div class="text-3xl font-bold text-orange-400 mb-2">200+</div>
+                    <div class="text-white font-medium">Colleges Listed</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                    <div class="text-3xl font-bold text-orange-400 mb-2">95%</div>
+                    <div class="text-white font-medium">Success Rate</div>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+             <button id="start-journey-btn" class="cta-btn">Start Your Journey</button>
+        
+            
+            <!-- Trust Indicators -->
+            <div class="mt-12 text-blue-200">
+                <p class="text-sm mb-4">Trusted by students across all 20 districts of J&K</p>
+                <div class="flex justify-center space-x-8 text-xs opacity-75">
+                    <span>✅ 100% Free</span>
+                    <span>✅ Government Certified</span>
+                    <span>✅ Expert Guidance</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Decorative Elements -->
+    <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-50 to-transparent"></div>
+</section>
+
+     <!-- AUTH SECTION -->
+        <section id="auth-section" class="py-16">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Your Future</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">An official digital platform by the Government of Jammu & Kashmir to guide students in their educational and career journey. Login to your account or create a new one to begin your personalized career guidance.</p>
+                <div class="flex justify-center items-center space-x-2 text-sm text-gray-500">
+                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    <span>Secure Government Platform</span>
+                </div>
+            </div>
+            
+             <div class="container">
+        <!-- LOGIN FORM -->
+        <div id="login-container" class="form-container">
+            <h1 class="form-title">Sign In</h1>
+            <p class="form-subtitle">Access your Career Advisor account</p>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label class="form-label" for="login-username">Username <span class="required">*</span></label>
+                    <input type="text" id="login-username" name="username" class="form-input" required>
+                    <div class="error-message" id="login-username-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="login-password">Password <span class="required">*</span></label>
+                    <input type="password" id="login-password" name="password" class="form-input" required>
+                    <div class="error-message" id="login-password-error"></div>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#" id="forgot-password-link">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign In</button>
+                
+                <div class="success-message" id="login-success-message"></div>
+                <div class="error-message" id="login-general-error"></div>
+            </form>
+
+            <p class="terms-text">
+                By signing in, you agree to the <a href="#">Terms of Service</a> and 
+                <a href="#">Privacy Policy</a> of Government of Jammu & Kashmir.
+            </p>
+        </div>
+
+        <!-- SIGNUP FORM (Initially Hidden) -->
+        <div id="signup-container" class="form-container hidden">
+            <h1 class="form-title">Create Account</h1>
+            <p class="form-subtitle">Register for Career Advisor Portal</p>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="signup-username">Choose Username <span class="required">*</span></label>
+                    <input type="text" id="signup-username" name="username" class="form-input" required>
+                    <div class="error-message" id="signup-username-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="password">Create Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                    <div class="password-help">Password must be at least 6 characters long</div>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="confirm-password">Confirm Password <span class="required">*</span></label>
+                    <input type="password" id="confirm-password" name="confirm-password" class="form-input" required>
+                    <div class="error-message" id="confirm-password-error"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Mobile Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="10-digit number" required>
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="dob">Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="dob" name="dob" class="form-input" required>
+                        <div class="error-message" id="dob-error"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="location">District <span class="required">*</span></label>
+                    <select id="location" name="location" class="form-select" required>
+                        <option value="">Select your district</option>
+                        <option value="Srinagar">Srinagar</option>
+                        <option value="Jammu">Jammu</option>
+                        <option value="Baramulla">Baramulla</option>
+                        <option value="Anantnag">Anantnag</option>
+                        <option value="Kathua">Kathua</option>
+                        <option value="Udhampur">Udhampur</option>
+                        <option value="Pulwama">Pulwama</option>
+                        <option value="Rajouri">Rajouri</option>
+                        <option value="Kupwara">Kupwara</option>
+                        <option value="Doda">Doda</option>
+                        <option value="Budgam">Budgam</option>
+                        <option value="Poonch">Poonch</option>
+                        <option value="Bandipora">Bandipora</option>
+                        <option value="Ganderbal">Ganderbal</option>
+                        <option value="Kulgam">Kulgam</option>
+                        <option value="Shopian">Shopian</option>
+                        <option value="Ramban">Ramban</option>
+                        <option value="Reasi">Reasi</option>
+                        <option value="Kishtwar">Kishtwar</option>
+                        <option value="Samba">Samba</option>
+                    </select>
+                    <div class="error-message" id="location-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="academic-interest">Academic Interest <span class="required">*</span></label>
+                    <select id="academic-interest" name="academic-interest" class="form-select" required>
+                        <option value="">Select your primary interest</option>
+                        <option value="Science">Science & Technology</option>
+                        <option value="Commerce">Commerce & Business</option>
+                        <option value="Arts">Arts & Humanities</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Medicine">Medicine & Healthcare</option>
+                        <option value="Law">Law & Legal Studies</option>
+                        <option value="Education">Education & Teaching</option>
+                        <option value="Agriculture">Agriculture & Environmental</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="Civil Services">Civil Services</option>
+                        <option value="Management">Management & Administration</option>
+                        <option value="Creative Arts">Creative Arts & Design</option>
+                    </select>
+                    <div class="error-message" id="academic-interest-error"></div>
+                </div>
+
+                <button type="submit" class="submit-btn">Create Account</button>
+                
+                <div class="success-message" id="signup-success-message"></div>
+                <div class="error-message" id="signup-general-error"></div>
+            </form>
+
+            <p class="terms-text">
+                By creating an account, you agree to the <a href="#">Terms of Service</a>, 
+                <a href="#">Privacy Policy</a>, and <a href="#">Information Technology Act</a> 
+                of Government of Jammu & Kashmir.
+            </p>
+        </div>
+
+        <div class="divider">
+            <span id="divider-text">New User?</span>
+        </div>
+
+        <div class="toggle-link">
+            <a href="#" id="toggle-auth-link">Create New Account</a>
+        </div>
+    </div>
+                    
+        </section>
+        
+ <!-- MAIN CONTENT SECTION (FIXED) -->
+        <section id="main-content" class="hidden">
+            <!-- HOME SECTION -->
+            <section id="home" class="py-16">
+
+
+                  <!-- Button to toggle the dashboard -top right-->
+    <div class="text-center">
+        <button id="toggleDashboardBtn" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform transform hover:scale-105">
+         why this platform
+        </button>
+    </div>
+
+
+     <!-- Dashboard Section (Initially Hidden) -->
+    <div id="dashboard" class="hidden mt-8">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">J&K Higher Education Overview</h1>
+
+            <!-- Key Metrics Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- College Pursuit Rate Card -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-500">College Pursuit Rate</h3>
+                            <p class="text-3xl font-bold text-red-600 mt-2">&lt; 25%</p>
+                        </div>
+                        <div class="bg-red-100 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path d="M12 14l6.16-3.422A12.083 12.083 0 0112 21a12.083 12.083 0 01-6.16-10.422L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 012-2h1.945M12 14v7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-4">of Class 10/12 passers pursue formal college education.</p>
+                </div>
+                <!-- Exams vs. Enrollment Card -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-500">Exams vs. Enrollment</h3>
+                            <p class="text-3xl font-bold text-blue-600 mt-2">13k / 50k+</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-4">students join college annually out of those who appear for exams.</p>
+                </div>
+                <!-- Enrollment Decline (Jammu) Card -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-500">Enrollment Decline (Jammu)</h3>
+                            <p class="text-3xl font-bold text-yellow-600 mt-2">40-50%</p>
+                        </div>
+                        <div class="bg-yellow-100 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-4">decline in enrollment in Jammu division colleges.</p>
+                </div>
+                <!-- Enrollment Decline (Kashmir) Card -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-500">Enrollment Decline (Kashmir)</h3>
+                            <p class="text-3xl font-bold text-green-600 mt-2">30-50%</p>
+                        </div>
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-4">decline in enrollment in Kashmir division colleges.</p>
+                </div>
+            </div>
+
+            <!-- Charts and Analysis Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 mt-6">
+                <!-- Charts Column -->
+                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="font-semibold text-gray-700 text-center">Exam Appearances vs. College Admissions</h3>
+                        <div class="chart-container mt-4">
+                            <canvas id="studentsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="font-semibold text-gray-700 text-center">Jammu Division College Stats</h3>
+                        <div class="chart-container mt-4">
+                            <canvas id="collegesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Analysis Column -->
+                <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
+                    <div>
+                        <h3 class="font-bold text-lg text-red-700">Root Cause Analysis</h3>
+                        <p class="mt-2 text-gray-600">The primary issue is a <span class="font-semibold">lack of awareness</span> about academic and career options, not deficiencies in infrastructure or faculty.</p>
+                    </div>
+                    <hr class="my-6">
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-800">Key Areas of Uncertainty</h3>
+                        <ul class="mt-2 space-y-2 text-gray-600 list-disc list-inside">
+                            <li>Importance of graduation</li>
+                            <li>Course-to-career connections</li>
+                            <li>Making subject choices based on interests</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- FIXED Google Gemini Chatbot - Replace your existing chatbot code -->
+<div id="chatgpt-container" class="chatbot-hidden">
+    <div id="chatgpt-header">
+        <div class="header-content">
+            <div class="bot-avatar">🎓</div>
+            <div class="header-text">
+                <h3>J&K Career Assistant</h3>
+                <span class="status-indicator">● Online</span>
+            </div>
+        </div>
+        <button id="close-chat" aria-label="Close chat">×</button>
+    </div>
+    
+    <div id="chatgpt-messages">
+        <div class="message bot-message welcome-message">
+            <div class="message-avatar">🎓</div>
+            <div class="message-content">
+                <div class="message-text">
+                    Hello! 👋 I'm your J&K Career Assistant. I can help you with:
+                    <br><br>
+                    📚 <strong>Academic Streams</strong> - Science, Commerce, Arts<br>
+                    🏛️ <strong>Colleges in J&K</strong> - Admissions, rankings<br>
+                    📝 <strong>Entrance Exams</strong> - JEE, NEET, JKCET<br>
+                    💼 <strong>Career Paths</strong> - Job opportunities<br><br>
+                    What would you like to know? 😊
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="typing-indicator" class="typing-indicator" style="display: none;">
+        <div class="message bot-message">
+            <div class="message-avatar">🎓</div>
+            <div class="message-content">
+                <div class="typing-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="chatgpt-input-area">
+        <div class="quick-suggestions" id="quick-suggestions">
+            <button class="quick-btn" data-message="What streams are available after 12th?">Academic Streams</button>
+            <button class="quick-btn" data-message="Tell me about top colleges in J&K">Top Colleges</button>
+            <button class="quick-btn" data-message="How to prepare for JEE Main?">Exam Prep</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="chatgpt-input" placeholder="Ask about careers, colleges, exams..." maxlength="500" />
+            <button id="chatgpt-send" aria-label="Send message">Send</button>
+        </div>
+    </div>
+</div>
+
+<button id="chatgpt-toggle" aria-label="Open career assistant">
+    <div class="toggle-icon">🤖</div>
+    <div class="toggle-text">Ask AI Assistant</div>
+</button>
+
+                <!-- App Download Button - Top Left -->
+                <div class="mb-8">
+                    <button id="app-download-btn" class="app-download-button app-download-pulse">
+                        <span class="text-xl">📱</span>
+                        <div class="flex flex-col text-left">
+                            <span class="text-xs leading-tight opacity-90">Download Mobile App</span>
+                            <span class="text-sm font-bold leading-tight">J&K Career Advisor</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Your Personalized Dashboard</h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Welcome back! Here's a quick overview of your recommendations based on your profile and assessment results from the J&K Government Career Guidance System.</p>
+                </div>
+                <!--recommendation-->
+                <div id="recommendations-card" class="official-card max-w-5xl mx-auto p-8 mb-12 cursor-pointer hover:scale-105 transition-transform duration-300 hover:shadow-xl">
+                    <h2 class="text-2xl font-bold text-center text-blue-800 mb-8">Recommended for You</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+                        <div class="p-6 bg-blue-50 rounded-lg">
+                            <div class="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">Stream</div>
+                            <div id="home-stream" class="text-3xl font-bold text-gray-800">N/A</div>
+                        </div>
+                        <div class="p-6 bg-orange-50 rounded-lg">
+                            <div class="text-sm font-semibold text-orange-600 uppercase tracking-wide mb-2">Course</div>
+                            <div id="home-course" class="text-3xl font-bold text-gray-800">N/A</div>
+                        </div>
+                        <div class="p-6 bg-green-50 rounded-lg">
+                            <div class="text-sm font-semibold text-green-600 uppercase tracking-wide mb-2">College</div>
+                            <div id="home-college" class="text-3xl font-bold text-gray-800">N/A</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <button id="streams-card" class="official-card p-8 text-center hover:scale-105 transition-transform">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">📚</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-800 mb-3">Streams & Careers</h3>
+                        <p class="text-gray-600">Explore detailed information on academic streams, career paths, and future scope.</p>
+                    </button>
+                    <button id="colleges-card" class="official-card p-8 text-center hover:scale-105 transition-transform">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🏛️</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-orange-600 mb-3">College Directory</h3>
+                
+                        <p class="text-gray-600">Find colleges and courses in J&K tailored to your interests and location.</p>
+                    </button>
+                    <button id="assessment-card" class="official-card p-8 text-center hover:scale-105 transition-transform">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🎯</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-600 mb-3">Take Assessment (according to interest)</h3>
+                        <p class="text-gray-600">Discover your ideal career path with our comprehensive psychometric quiz.</p>
+                    </button>
+                    <button id="find-matches-card" class="official-card p-8 text-center hover:scale-105 transition-transform">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🤝</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-600 mb-3">Find Matches</h3>
+                        <p class="text-gray-600">Connect with students who share your interests and career aspirations.</p>
+                    </button>
+                    <!-- Mentorship and Counselling Card -->
+                    <button id="mentorship-card" class="official-card p-8 text-center hover:scale-105 transition-transform">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">📚</span>
+                        </div>
+                       <h3 class="text-xl font-bold text-blue-800 mb-3">Mentorship & Counselling</h3>
+                        <p class="text-gray-600">Get guidance from seniors, faculty, and counsellors for academic and personal support.</p>
+                    </button>
+                    <!-- Add the back button to the home page -->
+                    <a href="#home" class="hidden"></a>
+                </div>
+
+                <!-- Timeline Tracker Section -->
+                <div class="official-card max-w-5xl mx-auto p-8 timeline-tracker">
+                    <div class="timeline-progress" id="timeline-progress"></div>
+                    <div class="flex items-center justify-between mb-8">
+                        <h2 class="text-2xl font-bold text-blue-800">📅 Important Dates Timeline</h2>
+                        <div class="flex items-center space-x-4">
+                            <button id="timeline-prev" class="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition">
+                                <span class="text-blue-600">◀</span>
+                            </button>
+                            <span id="timeline-counter" class="text-sm font-medium text-gray-600">1-2 of 4</span>
+                            <button id="timeline-next" class="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition">
+                                <span class="text-blue-600">▶</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="timeline-container">
+                        <!-- Timeline items will be populated dynamically -->
+                    </div>
+                    
+                    <div class="timeline-indicator" id="timeline-indicator">
+                        <!-- Dots will be populated dynamically -->
+                    </div>
+                </div>
+            </section>
+
+
+            <!--personalised Quiz page-->
+             <section id="Pers_Quiz-page" class="py-16 hidden">
+          
+  <div class="container mx-auto px-4 py-8">
+
+    <!-- ================= Interest Page ================= -->
+<div id="interest-page" class="text-center mb-12">
+  <h1 class="text-4xl font-bold text-indigo-700 mb-8">Select Your Interest</h1>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- Science -->
+    <div onclick="selectInterest('science')" class="interest-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+      <div class="bg-blue-50 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+        <img src="http://static.photos/science/200x200/1" alt="Science" class="w-12 h-12 object-contain">
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Science</h3>
+      <p class="text-gray-600">Physics, Chemistry, Biology, Astronomy – Explore the world of STEM!</p>
+    </div>
+
+    <!-- Humanities -->
+    <div onclick="selectInterest('humanities')" class="interest-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+      <div class="bg-purple-50 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+        <img src="http://static.photos/education/200x200/2" alt="Humanities" class="w-12 h-12 object-contain">
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Humanities</h3>
+      <p class="text-gray-600">History, Literature, Psychology, Law – Discover human culture and society.</p>
+    </div>
+
+    <!-- General Knowledge -->
+    <div onclick="selectInterest('general')" class="interest-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+      <div class="bg-green-50 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+        <img src="http://static.photos/technology/200x200/3" alt="General Knowledge" class="w-12 h-12 object-contain">
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">General Knowledge</h3>
+      <p class="text-gray-600">A mix of topics from science, society, tech, and current affairs.</p>
+    </div>
+
+    <!-- Commerce & Management -->
+    <div onclick="selectInterest('commerce')" class="interest-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+      <div class="bg-yellow-50 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+        <img src="http://static.photos/commerce/200x200/4" alt="Commerce" class="w-12 h-12 object-contain">
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Commerce & Management</h3>
+      <p class="text-gray-600">Business, Finance, Marketing, Accounting – Build your corporate acumen.</p>
+    </div>
+
+    <!-- Creative Arts & Design -->
+    <div onclick="selectInterest('arts')" class="interest-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+      <div class="bg-pink-50 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+        <img src="http://static.photos/arts/200x200/5" alt="Arts & Design" class="w-12 h-12 object-contain">
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Creative Arts & Design</h3>
+      <p class="text-gray-600">Design, Music, Architecture, Performing Arts – Express your creativity!</p>
+    </div>
+
+    <!-- Vocational & Skill-Based -->
+    <div onclick="selectInterest('vocational')" class="interest-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+      <div class="bg-orange-50 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+        <img src="http://static.photos/vocational/200x200/6" alt="Vocational Skills" class="w-12 h-12 object-contain">
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Vocational & Skill-Based</h3>
+      <p class="text-gray-600">Practical skills, trades, hospitality, IT & culinary – Learn by doing!</p>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- ================= Quiz Page ================= -->
+    <div id="quiz-page" class="hidden">
+      <!-- Quiz Intro & User Info Section -->
+      <div id="intro" class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-indigo-700 mb-4">Knowledge Check Quiz</h1>
+        <p class="text-lg text-gray-600 mb-8">Test your understanding with our quick 15-question quiz and get personalized feedback!</p>
+
+        <!-- User Info Form -->
+        <div class="mb-6 max-w-md mx-auto text-left">
+          <label class="block mb-2 font-medium text-gray-700">Name</label>
+          <input type="text" id="inputName" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Enter your name" required />
+
+          <label class="block mb-2 font-medium text-gray-700">Phone</label>
+          <input type="text" id="inputPhone" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Enter your phone" />
+
+          <label class="block mb-2 font-medium text-gray-700">Email</label>
+          <input type="email" id="inputEmail" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Enter your email" />
+        </div>
+
+        <button onclick="startQuiz()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 inline-flex items-center">
+          Start Quiz <i data-feather="arrow-right" class="ml-2"></i>
+        </button>
+      </div>
+
+      <!-- Quiz Container -->
+      <div id="quiz" class="quiz-container hidden">
+        <div class="flex justify-between items-center mb-6">
+          <span class="text-gray-600 font-medium">Question <span id="current-question">1</span> of <span id="total-questions">1</span></span>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 ml-4">
+            <div id="progress" class="progress-bar bg-indigo-600 h-2.5 rounded-full" style="width: 20%"></div>
+          </div>
+        </div>
+
+        <div id="question-container" class="question-card bg-white p-6 mb-6"></div>
+
+        <div class="flex justify-between">
+          <button id="prev-btn" onclick="prevQuestion()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition duration-300 hidden">
+            <i data-feather="arrow-left" class="mr-2"></i> Previous
+          </button>
+          <button id="next-btn" onclick="nextQuestion()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300 ml-auto">
+            Next <i data-feather="arrow-right" class="ml-2"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div id="results" class="hidden">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-indigo-700 mb-4">Your Quiz Results</h2>
+          <p class="text-lg text-gray-600">Here's how you performed and areas to focus on</p>
+        </div>
+
+        <div id="user-report" class="bg-white p-6 rounded-2xl shadow-lg mb-8">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i data-feather="file-text" class="mr-2 text-indigo-600"></i> User Report
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div class="flex items-center">
+              <i data-feather="user" class="mr-2 text-indigo-500"></i>
+              <span><strong>Name:</strong> <span id="userName">John Doe</span></span>
+            </div>
+            <div class="flex items-center">
+              <i data-feather="phone" class="mr-2 text-indigo-500"></i>
+              <span><strong>Phone:</strong> <span id="userPhone">+91 1234567890</span></span>
+            </div>
+            <div class="flex items-center">
+              <i data-feather="mail" class="mr-2 text-indigo-500"></i>
+              <span><strong>Email:</strong> <span id="userEmail">john@example.com</span></span>
+            </div>
+            <div class="flex items-center">
+              <i data-feather="calendar" class="mr-2 text-indigo-500"></i>
+              <span><strong>Date:</strong> <span id="quizDate"></span></span>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <p><strong>Total Score:</strong> <span id="totalScore"></span></p>
+
+          </div>
+          <div class="text-center mt-6">
+            <button onclick="downloadReport()" class="floating-btn bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center mt-4">
+              <i data-feather="download" class="mr-2"></i> Download Report
+            </button>
+          </div>
+
+          <div id="reportSummary" class="mt-4">
+             <p id="youScored" class="mt-2 font-medium text-gray-700"></p> <!-- You scored X out of Y -->
+             <p id="needsImprovement" class="mt-1 text-red-600 font-medium"></p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Score Summary</h3>
+            <div class="h-64">
+              <canvas id="resultChart"></canvas>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Performance Breakdown</h3>
+            <div class="space-y-4">
+              <div class="p-4 rounded-lg strength-card bg-green-50">
+                <div class="flex items-center">
+                  <i data-feather="check-circle" class="text-green-500 mr-3"></i>
+                  <h4 class="font-medium text-green-800">Strong Areas</h4>
+                </div>
+                <ul id="strengths" class="mt-2 ml-8 list-disc text-green-700"></ul>
+              </div>
+              <div class="p-4 rounded-lg weakness-card bg-red-50">
+                <div class="flex items-center">
+                  <i data-feather="alert-circle" class="text-red-500 mr-3"></i>
+                  <h4 class="font-medium text-red-800">Areas to Improve</h4>
+                </div>
+                <ul id="weaknesses" class="mt-2 ml-8 list-disc text-red-700"></ul>
+              </div>
+            </div>
+    <div class="mt-6 text-center">
+  <h4 class="text-lg font-semibold text-gray-800 mb-2">Overall Correctness</h4>
+  <div class="w-48 h-48 mx-auto"> <!-- Fixed size wrapper -->
+    <canvas id="performanceChart"></canvas>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button onclick="restartQuiz()" class="floating-btn bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+            <i data-feather="refresh-cw" class="mr-2"></i> Take Quiz Again
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+            <!--General Assesment page-->
+            <section id="assessment-page" class="py-16 hidden">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Career Aptitude Assessment</h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Take our scientifically designed psychometric assessment to discover which academic streams and career paths align with your interests, personality, and aptitude.</p>
+                </div>
+                
+                <div class="official-card max-w-3xl mx-auto p-8">
+                    <h2 class="text-2xl font-semibold mb-8 text-center text-blue-800">Psychometric Assessment</h2>
+                    <div id="quiz-section">
+                        <div class="mb-6">
+                            <div class="bg-blue-100 h-2 rounded-full">
+                                <div id="progress-bar" class="bg-blue-600 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                            </div>
+                            <div class="text-sm text-gray-600 mt-2" id="progress-text">Question 1 of 8</div>
+                        </div>
+                        <p id="question-text" class="text-xl font-medium mb-6 text-gray-800"></p>
+                        <div id="options-container" class="space-y-4"></div>
+                        <button id="next-button" class="gov-btn-primary mt-8 w-full">Next Question</button>
+                    </div>
+                    <div id="quiz-complete" class="hidden text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-3xl">✅</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-green-600 mb-4">Assessment Complete!</h3>
+                        <p class="text-gray-600 mb-8">Great job! Click below to see your personalized career recommendations based on your responses.</p>
+                        <button id="results-button" class="gov-btn-primary text-lg px-8 py-4">View My Career Profile</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            
+            <section id="streams-careers-page" class="py-16 hidden">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Academic Streams & Career Mapping</h1>
+                    <p class="text-lg text-gray-600 max-w-4xl mx-auto">Explore comprehensive information about different academic streams, course options, career pathways, and their growth potential. Make informed decisions about your educational journey.</p>
+                </div>
+                
+                <div class="official-card max-w-6xl mx-auto p-8">
+                    <div class="flex justify-center space-x-4 mb-12 flex-wrap gap-2">
+                        <button class="gov-tab-button active" data-stream="Science">
+                            <span class="text-lg mr-2">🔬</span>Science
+                        </button>
+                        <button class="gov-tab-button" data-stream="Arts">
+                            <span class="text-lg mr-2">📖</span>Arts
+                        </button>
+                        <button class="gov-tab-button" data-stream="Commerce">
+                            <span class="text-lg mr-2">💼</span>Commerce
+                        </button>
+                        <button class="gov-tab-button" data-stream="Engineering">
+                            <span class="text-lg mr-2">⚙️</span>Engineering
+                        </button>
+                    </div>
+                    
+                    <div id="stream-content" class="space-y-12">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <div>
+                                <h2 id="stream-title" class="text-3xl font-bold text-blue-800 mb-4">Science Stream</h2>
+                                <p id="stream-description" class="text-gray-700 text-lg leading-relaxed">The Science stream focuses on fundamental principles of the physical and natural world. It opens doors to a wide range of analytical and technical careers.</p>
+                                <div class="mt-6">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjBmOWZmIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iMzAiIGZpbGw9IiMwMDY2Y2MiLz4KPHN2ZyB4PSI1MCIgeT0iNjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iODAiPgo8cGF0aCBkPSJNMTAgNDBMNDAgMTBMNzAgNDBMNDAgNzBaIiBmaWxsPSIjZmY2NjAwIi8+Cjwvc3ZnPgo8dGV4dCB4PSIyMDAiIHk9IjEwNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzMzMzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TY2llbmNlIEZpZWxkPC90ZXh0Pgo8L3N2Zz4=" alt="Science Stream Illustration" class="course-image">
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-blue-800 mb-6">Career Growth Mapping</h3>
+                                <div class="chart-container">
+                                    <canvas id="careerMappingChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="official-card p-8">
+                            <h3 class="text-2xl font-bold text-blue-800 mb-8">Course Options & Growth Trends</h3>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                                <div class="chart-container">
+                                    <canvas id="courseScopeChart"></canvas>
+                                </div>
+                                <div id="course-details" class="space-y-6">
+                                    <!-- Course details will be populated dynamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="mentorship-page" class="py-16 hidden">
+                <!-- Page Header -->
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Mentorship & Counselling</h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Connect with experienced seniors, dedicated faculty members, and professional counsellors 
+                        to get the support and guidance you need for your academic and personal journey.
+                    </p>
+                </div>
+
+                <!-- Senior Students -->
+                <div class="official-card max-w-5xl mx-auto p-8 mb-12">
+                    <h2 class="text-2xl font-semibold mb-8 text-center text-blue-800">Connect with Senior Students</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="senior-students-grid">
+                        <!-- Senior students populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Faculty Mentors -->
+                <div class="official-card max-w-5xl mx-auto p-8 mb-12">
+                    <h2 class="text-2xl font-semibold mb-8 text-center text-green-800">Faculty Mentors from Government Colleges</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="faculty-mentors-grid">
+                        <!-- Faculty mentors populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Counsellors for Girls -->
+                <div class="official-card max-w-5xl mx-auto p-8 bg-gradient-to-r from-pink-50 to-purple-50 border-2 border-pink-200">
+                    <h2 class="text-2xl font-bold mb-6 text-center text-purple-800">Counsellors for Girls - Safe Space & Support</h2>
+                    <p class="text-purple-600 max-w-3xl mx-auto text-center mb-6">
+                        A dedicated support system for girls with professional counsellors specializing in safety, 
+                        mental health, and career guidance. All conversations are completely confidential and secure.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border border-pink-200 mb-8 text-center">
+                        <p class="text-sm text-slate-600 font-medium">
+                            🔒 Complete Privacy Assured | 📞 24/7 Emergency Support: <strong>1091</strong> | 💬 Confidential Sessions Available
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="counsellors-grid">
+                        <!-- Counsellors populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Contact Modal -->
+                <div id="contact-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+                        <h3 class="text-xl font-semibold mb-4" id="modal-title">Connect with Mentor</h3>
+                        <div id="modal-content">
+                            <!-- Content populated by JavaScript -->
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <button id="close-modal" class="gov-btn-secondary flex-1">Close</button>
+                            <button id="confirm-contact" class="gov-btn-primary flex-1">Contact Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="profile" class="py-16 hidden">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Your Career Profile</h1>
+                    <p class="text-lg text-gray-600 max-w-4xl mx-auto">Welcome to your personalized dashboard! Here are career and educational recommendations tailored specifically to your profile, interests, and assessment results.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                    <div class="official-card p-8">
+                        <h2 class="text-2xl font-bold text-blue-800 mb-6">Recommended Stream</h2>
+                        <div id="stream-result" class="text-center">
+                            <!-- Stream results will be populated dynamically -->
+                        </div>
+                    </div>
+                    <div class="official-card p-8">
+                        <h2 class="text-2xl font-bold text-blue-800 mb-6">Top Career Pathways</h2>
+                        <div class="chart-container">
+                            <canvas id="careerChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 official-card p-8">
+                        <h2 class="text-2xl font-bold text-blue-800 mb-8">Recommended Colleges & Courses</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="recommended-colleges-list">
+                            <!-- Colleges will be populated dynamically -->
+                        </div>
+                    </div>
+                    <div class="official-card p-8">
+                        <h2 class="text-2xl font-bold text-blue-800 mb-6">Study Materials</h2>
+                        <ul id="study-materials-list" class="space-y-3">
+                            <!-- Study materials will be populated dynamically -->
+                        </ul>
+                    </div>
+                    <div class="official-card p-8">
+                        <h2 class="text-2xl font-bold text-blue-800 mb-6">Latest Updates</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
+                                <span class="text-blue-600 text-xl">📢</span>
+                                <div>
+                                    <p class="font-medium text-blue-800">JEE Main 2026 Registration</p>
+                                    <p class="text-sm text-gray-600">Registration starts November 2025</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
+                                <span class="text-green-600 text-xl">🎓</span>
+                                <div>
+                                    <p class="font-medium text-green-800">IIT Jammu Placements</p>
+                                    <p class="text-sm text-gray-600">Highest package reaches ₹53 LPA in 2025</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg">
+                                <span class="text-orange-600 text-xl">💰</span>
+                                <div>
+                                    <p class="font-medium text-orange-800">J&K Scholarship Scheme</p>
+                                    <p class="text-sm text-gray-600">New scholarship launched for engineering students</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="colleges" class="py-16 hidden">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">J&K Educational Institutions</h1>
+                    <p class="text-lg text-gray-600 max-w-4xl mx-auto">Explore colleges and universities in Jammu & Kashmir. Filter by location, stream, and courses to find the perfect institution for your educational journey.</p>
+                </div>
+                
+                <div class="official-card p-8 max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label for="stream-filter" class="block text-gray-700 font-medium mb-2">Filter by Stream</label>
+                            <select id="stream-filter" class="gov-form-input w-full">
+                                <option value="All">All Streams</option>
+                                <option value="Science">Science</option>
+                                <option value="Arts">Arts</option>
+                                <option value="Commerce">Commerce</option>
+                                <option value="Engineering">Engineering</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="course-filter" class="block text-gray-700 font-medium mb-2">Filter by Course</label>
+                            <select id="course-filter" class="gov-form-input w-full">
+                                <option value="All">All Courses</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="college-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Colleges will be populated dynamically -->
+                    </div>
+                    <div id="no-results" class="hidden text-center py-12">
+                        <div class="text-6xl mb-4">🔍</div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-2">No Results Found</h3>
+                        <p class="text-gray-500">Try adjusting your filters to see more colleges.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Chatbot Button - Bottom Right -->
+    <div class="chatbot-button" id="chatbot-button">
+        <div class="chatbot-tooltip">Need help? Chat with us!</div>
+        <span>🤖</span>
+    </div>
+
+    <!-- Find Matches Modal -->
+    <div id="matches-modal" class="gov-modal hidden">
+        <div class="gov-modal-content p-8 rounded-lg max-w-4xl w-full mx-4 relative">
+            <button id="close-matches-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl font-bold">
+                ×
+            </button>
+            <div class="text-center mb-8">
+                <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🤝</span>
+                </div>
+                <h2 class="text-3xl font-bold text-purple-600 mb-4">Find Your Study Matches</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Connect with fellow students who share your academic interests and career aspirations. Build your professional network early!</p>
+            </div>
+            
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-bold text-blue-800">Students with Similar Interests</h3>
+                    <span id="matches-count" class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">12 matches found</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="matches-container">
+                    <!-- Student matches will be populated dynamically -->
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="gov-btn-primary" onclick="alert('🤝 Full networking features coming soon in mobile app!')">
+                    View All Matches
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="college-modal" class="gov-modal hidden">
+        <div class="gov-modal-content p-8 rounded-lg max-w-4xl w-full mx-4 relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl font-bold">
+                ×
+            </button>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <h2 id="modal-title" class="text-3xl font-bold text-blue-800 mb-4"></h2>
+                    <p id="modal-description" class="text-gray-700 mb-6 leading-relaxed"></p>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <div class="font-semibold text-blue-800">Stream</div>
+                            <div id="modal-stream" class="text-gray-700"></div>
+                        </div>
+                        <div class="bg-orange-50 p-3 rounded-lg">
+                            <div class="font-semibold text-orange-800">Location</div>
+                            <div id="modal-location" class="text-gray-700"></div>
+                        </div>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <div class="font-semibold text-green-800">Admission Rate</div>
+                            <div id="modal-admission-rate" class="text-gray-700"></div>
+                        </div>
+                        <div class="bg-purple-50 p-3 rounded-lg">
+                            <div class="font-semibold text-purple-800">Courses</div>
+                            <div id="modal-courses" class="text-gray-700 text-xs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">Enrollment Growth Trend</h3>
+                    <div class="chart-container">
+                        <canvas id="collegeGrowthChart"></canvas></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <!-- Footer Section -->
+    <footer class="bg-slate-800 text-white border-t-4 border-orange-5
